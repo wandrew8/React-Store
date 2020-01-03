@@ -42,5 +42,5 @@ export function getFunName() {
     "Spot",
   ];
 
-  return `The ${rando(adjectives)}-Seafood-${rando(nouns)}`;
+  return `The-${rando(adjectives)}-Seafood-${rando(nouns)}`;
 }
