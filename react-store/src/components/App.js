@@ -36,7 +36,6 @@ class App extends React.Component {
     }
 
     componentDidUpdate() {
-        console.log(this.state.order)
         localStorage.setItem(this.props.match.params.storeId, JSON.stringify(this.state.order))
     }
     
@@ -92,6 +91,7 @@ class App extends React.Component {
                     removeFromOrder={this.removeFromOrder}
                     order={this.state.order} />
                 <Inventory 
+                    storeId={this.props.match.params.storeId}
                     deleteFish={this.deleteFish}
                     updateFish={this.updateFish}
                     fishes={this.state.fishes}
